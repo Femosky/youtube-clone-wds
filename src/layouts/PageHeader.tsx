@@ -1,4 +1,4 @@
-import { Bell, Menu, Mic, Search, Upload, User } from 'lucide-react';
+import { ArrowLeft, Bell, Menu, Mic, Search, Upload, User } from 'lucide-react';
 import logo from '../assets/youtube-logo.svg';
 import { Button } from '../components/Button';
 import { useState } from 'react';
@@ -19,7 +19,18 @@ export function PageHeader() {
                 </a>
             </div>
 
-            <form className="md:flex hidden gap-4 flex-grow justify-center">
+            <form className={`gap-4 flex-grow justify-center ${showFullWidthSearch ? 'flex' : 'hidden md:flex'}`}>
+                {showFullWidthSearch && (
+                    <Button
+                        onClick={() => setShowFullWidthSearch(false)}
+                        type="button"
+                        variant="ghost"
+                        size="icon"
+                        className="flex-shrink-0"
+                    >
+                        <ArrowLeft />
+                    </Button>
+                )}
                 <div className="flex flex-grow max-w-[600px]">
                     <input
                         type="search"
