@@ -1,6 +1,6 @@
 # Note
 
-### Link to view the project: [YouTube Clone WDS]()
+### Link to view the project: [YouTube Clone WDS](https://youtube-clone-imedklr7d-femosky.vercel.app/)
 
 This project was a step-by-step-followed YouTube clone tutorial I took by
 [WebDevSimplified](https://www.youtube.com/watch?v=ymGB1lqP1CM&t=5427s) on YouTube.
